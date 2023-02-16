@@ -48,6 +48,3 @@ net stop minio
 minio-server.exe uninstall
 ```
 
-# 测试代码
-
-测试代码压缩包：minio-demo.7z
