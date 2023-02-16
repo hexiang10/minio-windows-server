@@ -16,8 +16,10 @@
 
 package com.example.demo.demos.controller;
 
+import com.example.demo.demos.enums.FilePathType;
 import com.example.demo.demos.result.Result;
 import com.example.demo.demos.utils.MinIOUtil;
+import com.example.demo.demos.utils.StringUtil;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -38,7 +40,7 @@ public class DemoController {
     @PostMapping("/upload")
     public Result upload(MultipartFile file) throws Exception {
         // TODO 文件路径、文件夹名、文件名自定义设置处理
-        String fileName = file.getOriginalFilename();
+        String fileName = FilePathType.VIDEO.PATH+StringUtil.getCurrentTimeStr()+"_"+file.getOriginalFilename();
         // 通过文件流的方式上传文件，可自己开发其他上传方式
         MinIOUtil.uploadFile(fileName,file.getInputStream());
         // 获取文件上传成功的地址，如果获取其他文件信息，可自行封装对象
@@ -46,6 +48,5 @@ public class DemoController {
         // 返回信息给前端
         return Result.ok(url);
     }
-
 
 }
