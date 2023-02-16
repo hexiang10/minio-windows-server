@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: demo
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+# MinIO 配置
+minio:
+  # MinIO服务地址
+  endpoint: http://10.52.2.156:9090
+  # 文件地址host
+  fileHost: http://10.52.2.156:9090
+  # 存储桶bucket名称
+  bucketName: techforum
+  # 用户名(默认的)
+  accessKey: minioadmin
+  # 密码(默认的)
+  secretKey: minioadmin
+  # 图片大小限制，单位：m
+  imgSize: 1024
+  # 文件大小限制，单位：m
+  fileSize: 1024
