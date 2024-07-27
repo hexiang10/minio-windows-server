@@ -1,10 +1,10 @@
 # Windows安装Minio服务
 
-# 下载服务
+## 1. 下载服务
 
-下载链接：[minio-lastest](https://github.com/hexiang10/minio/releases/download/lastest/minio-lastest.7z?_blank)
+下载地址：[minio-server-v1.0.0](https://github.com/hexiang10/minio-windows-server/releases/download/v1.0.0/minio-server-v1.0.0.7z?_blank)
 
-# 注册服务
+## 2. 注册服务
 
 **以管理员身份运行cmd**，进入你下载好minio的存放目录，输入以下命令
 
@@ -12,7 +12,7 @@
 minio-server.exe install
 ```
 
-# 启动服务
+## 3. 启动服务
 
 - 方式一：**以管理员身份运行cmd**，进入你存放minio的目录下，输入以下命令
 
@@ -22,15 +22,15 @@ net start minio
 
 - 方式二：进入任务管理器，查看服务列表，手动开启，或修改服务启动配置
 
-# 使用服务
+## 4. 使用服务
 
-- 在浏览器访问minio控制台：[http://127.0.0.1:9000](http://localhost:9000)
+- 控制台地址：[http://127.0.0.1:9090](http://127.0.0.1:9090)
+
+- 服务器地址：[http://127.0.0.1:9000](http://127.0.0.1:9000)
 
 - 账号和密码都是：**minioadmin**
 
-- 服务器地址：[http://127.0.0.1:9090](http://localhost:9090)
-
-# 关闭服务
+## 5. 关闭服务
 
 - 方式一：**以管理员身份运行cmd**，进入你存放minio的目录下，输入以下命令
 
@@ -40,7 +40,7 @@ net stop minio
 
 - 方式二：进入任务管理器，查看服务列表，手动关闭服务
 
-# 卸载服务
+## 6. 卸载服务
 
 **以管理员身份运行cmd**，进入你存放minio的目录下，输入以下命令
 
