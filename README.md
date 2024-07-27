@@ -2,11 +2,11 @@
 
 # 下载服务
 
-下载链接🔗：[minio-lasted](https://gitcode.net/dreamer/minio/-/archive/lasted/minio-lasted.zip?_blank)
+下载链接：[minio-lastest](https://github.com/hexiang10/minio/releases/download/lastest/minio-lastest.7z?_blank)
 
 # 注册服务
 
-**以管理员身份运行cmd**，进入你存放minio的目录下，输入以下命令
+**以管理员身份运行cmd**，进入你下载好minio的存放目录，输入以下命令
 
 ```bash
 minio-server.exe install
